@@ -23,7 +23,7 @@ int main ()
     {
         if (words[i] == "bored" || words[i] == "apathy" || words[i] == "tired") //vectors element access is similar to arrays.
         {
-            words[i] = "Cheer up :)";
+            words[i] = "Cheer up :)"; //remember strings account for null terminator ( '\0')
         }
          cout << words[i] << ' ';
 
