@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //input/output stream
 #include <vector> // to use vectors
 
 using namespace std;
@@ -17,11 +17,11 @@ int main ()
         cin.get();
     }
 
-    system("CLS");
+    system("CLS"); //clear.
 
     for (int i = 0; i < words.size(); ++i)
     {
-        if (words[i] == "bored" || words[i] == "apathy" || words[i] == "tired")
+        if (words[i] == "bored" || words[i] == "apathy" || words[i] == "tired") //vectors element access is similar to arrays.
         {
             words[i] = "Cheer up :)";
         }
