@@ -11,7 +11,7 @@ struct change {
 /*object.member
 pointer->member*/
 
-void PassByReference (NumberChange *n);
+void PassByPointer (NumberChange *n);
 
 int main ()
 {
@@ -23,7 +23,7 @@ int main ()
   printf("The value of number1 before function passing = %d\n", value.number);
   printf("The value of ptr1 before function = %d\n",ptr->number);
 
-  PassByReference(ptr);
+  PassByPointer(ptr);
 
   printf("The value of number1 after function passing = %d\n", value.number);
   printf("The value of ptr1 after function passing = %d\n",ptr->number);
@@ -32,7 +32,7 @@ int main ()
 }
 
 
- void PassByReference (NumberChange *n)
+ void PassByPointer (NumberChange *n)
  {
   n->number = 235;
 
