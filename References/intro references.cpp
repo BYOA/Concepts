@@ -18,7 +18,8 @@ int main ()
     cout << "The valueref value is " << valueref << '\n' << '\n';
 
     cout << "The memory address of value is " << &value << '\n';
-    cout << "The memory address of valueref is " <<&valueref << '\n'; //same as value. valueref has a non-unique memory address as it is only another name to the object.
+    cout << "The memory address of valueref is " <<&valueref << '\n'; //same as value. valueref has a non-unique memory address 
+                                                                        //as it is only another name to the value object.
 
 
     /*NOTES:
