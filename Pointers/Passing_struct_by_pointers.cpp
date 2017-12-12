@@ -20,13 +20,13 @@ int main ()
 
   NumberChange *ptr = &value;
 
-  printf("The value of number1 before function passing = %d\n", value.number);
-  printf("The value of ptr1 before function = %d\n",ptr->number);
+  printf("The value of object value before function passing = %d\n", value.number);
+  printf("The value of ptr before function = %d\n",ptr->number);
 
   PassByPointer(ptr);
 
-  printf("The value of number1 after function passing = %d\n", value.number);
-  printf("The value of ptr1 after function passing = %d\n",ptr->number);
+  printf("The value of object value after function passing = %d\n", value.number);
+  printf("The value of ptr after function passing = %d\n",ptr->number);
 
   return 0 ; // successfully ran program
 }
