@@ -49,8 +49,12 @@ void PassByAddress (int *p, int v)
     cout << "The value the pointer holds is (memory address it holds): "  << p << '\n';
     cout << "The value of the memory address the pointer points to is now: " << *p << '\n';
 
-    cout << "The memory address of the value when passed to a function is now: " << &v << '\n';
-    cout << "The value that copied arugment holds is: " << v << '\n';
+    cout << "The memory address of the value when passed to a function is now: " << &v << '\n'; //different memory address as 
+                                                                                                //passing by value results in a copy 
+                                                                                                //of the argument
+    
+    cout << "The value that copied arugment holds is: " << v << '\n'; //unless the value is returned, the copied arugment will not change
+                                                                      //the value of the actual object
 
 
 }
