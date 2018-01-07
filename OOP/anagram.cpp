@@ -40,8 +40,8 @@ public: //behaviours
     }
     Solution(std::string s): s1{s} //member intializer list
     {
-        std::cout << "String 1: " << this->s1 << " is already entered.\nEnter string 2: \n";
-        std::cin >> (*this).s2;
+        std::cout << "String 1: " << this->s1 << " is already entered.\nEnter string 2: \n"; //hidden "this"poitner which refers to object (in this case it's only s)
+        std::cin >> (*this).s2; //.ie. (*this.s2) == this->s2. this == &s (in this example only as it's the only object).
     }
     void display()
     {
@@ -66,7 +66,7 @@ public: //behaviours
 int main()
 {
 
-    Solution s;
+    Solution s; //only object.
     s.display();
 
     return 0;
